@@ -130,4 +130,3 @@ Puedes escribirme a:
 
 Estoy abierta a seguir aprendiendo, creando y compartiendo.
     """)
-```
