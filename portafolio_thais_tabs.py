@@ -77,7 +77,7 @@ Me encuentro en formaciÃ³n, con interÃ©s en aplicar estos aprendizajes en pr
 
 with tabs[2]:
     st.subheader("EXPLORACIONES CREATIVAS")
-    st.image("IMG-20250624-WA0019.jpg.jpg", caption="ExploraciÃ³n visual", use_column_width=True)
+    st.image("IMG-20250624-WA0019.jpg", caption="ExploraciÃ³n visual", use_column_width=True)
     st.markdown("""
 **Ejercicios fotogrÃ¡ficos**  
 ExploraciÃ³n con luz natural, retratos y composiciÃ³n. Me interesa cÃ³mo la imagen puede sugerir atmÃ³sferas sutiles.
