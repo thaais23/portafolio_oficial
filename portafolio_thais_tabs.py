@@ -9,23 +9,24 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #f9f9fb;
+        background-color: #fffaf0;
     }
     .stApp {
         background-color: #ffffff;
     }
     html, body, [class*="css"] {
-        font-family: 'Arial', sans-serif;
-        color: #1e1e2f;
+        font-family: 'Georgia', serif;
+        color: #2e2e2e;
     }
     h1, h2, h3 {
-        color: #3b3b58;
+        color: #772f40;
         font-weight: 700;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # Título
 st.markdown("<h1 style='text-align: center;'>Portafolio de Thais Choque</h1>", unsafe_allow_html=True)
