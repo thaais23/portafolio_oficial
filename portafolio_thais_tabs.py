@@ -1,25 +1,26 @@
 
 import streamlit as st
 
-# Configuración
+# ConfiguraciÃ³n general
 st.set_page_config(page_title="Portafolio de Thais Choque", layout="wide")
 
-# Estilo limpio, suave y moderno
+# Estilos personalizados
 st.markdown(
     """
     <style>
     body {
-        background-color: #fffaf0;
+        background-color: #fffaf0 !important;
+        color: #2e2e2e !important;
     }
     .stApp {
-        background-color: #ffffff;
+        background-color: #ffffff !important;
     }
     html, body, [class*="css"] {
         font-family: 'Georgia', serif;
-        color: #2e2e2e;
+        color: #2e2e2e !important;
     }
     h1, h2, h3 {
-        color: #772f40;
+        color: #772f40 !important;
         font-weight: 700;
     }
     </style>
@@ -27,98 +28,98 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-# Título
+# TÃ­tulo principal e imagen circular
 st.markdown("<h1 style='text-align: center;'>Portafolio de Thais Choque</h1>", unsafe_allow_html=True)
-st.write("Estudiante de Comunicación Audiovisual en la PUCP")
-st.write("Este portafolio reúne aspectos de mi formación, intereses creativos y sensibilidad estética en desarrollo.")
+st.image("P1020006.jpg.png", caption="Thais Choque", width=200)
 
-# Tabs
+st.write("Estudiante de ComunicaciÃ³n Audiovisual en la PUCP")
+st.write("Este portafolio reÃºne aspectos de mi formaciÃ³n, intereses creativos y sensibilidad estÃ©tica en desarrollo.")
+
+# Tabs principales
 tabs = st.tabs([
     "INICIO", "RESUME", "EXPLORACIONES CREATIVAS", "RESEARCH", "ACHIEVEMENTS", "HOBBIES", "CONTACTO"
 ])
 
 with tabs[0]:
-    st.image("https://i.imgur.com/sDaRtnt.jpg", caption="Referencias visuales · atmósfera cálida y estética limpia", use_column_width=True)
     st.subheader("Bienvenida")
     st.markdown("""
 Este espacio contiene:
 
-- RESUME · Perfil académico
-- EXPLORACIONES CREATIVAS · Prácticas y aprendizajes
-- RESEARCH · Intereses en desarrollo
-- ACHIEVEMENTS · Participaciones formativas
-- HOBBIES · Gustos personales con valor creativo
-- CONTACTO · Información de contacto
+- RESUME Â· Perfil acadÃ©mico
+- EXPLORACIONES CREATIVAS Â· PrÃ¡cticas y aprendizajes
+- RESEARCH Â· Intereses en desarrollo
+- ACHIEVEMENTS Â· Participaciones formativas
+- HOBBIES Â· Gustos personales con valor creativo
+- CONTACTO Â· InformaciÃ³n de contacto
 
 Gracias por visitar este espacio.
     """)
 
 with tabs[1]:
-    st.subheader("RESUME · Perfil académico")
+    st.subheader("RESUME Â· Perfil acadÃ©mico")
     st.markdown("""
-**Formación**  
-- Comunicación Audiovisual en la PUCP (5to ciclo)  
-- Cursos enfocados en narrativa visual, lenguaje audiovisual, fotografía y edición  
+**FormaciÃ³n**  
+- ComunicaciÃ³n Audiovisual en la PUCP (5to ciclo)  
+- Cursos enfocados en narrativa visual, lenguaje audiovisual, fotografÃ­a y ediciÃ³n  
 
 **Habilidades**  
-- Edición básica de video  
-- Fotografía y composición  
-- Trabajo colaborativo y planificación  
-- Interés por nuevas herramientas digitales  
+- EdiciÃ³n bÃ¡sica de video  
+- FotografÃ­a y composiciÃ³n  
+- Trabajo colaborativo y planificaciÃ³n  
+- InterÃ©s por nuevas herramientas digitales  
 
 **Idiomas**  
-- Español (nativo)  
-- Inglés (avanzado)  
+- EspaÃ±ol (nativo)  
+- InglÃ©s (avanzado)  
 
-Me encuentro en formación, con interés en aplicar estos aprendizajes en proyectos creativos y colaborativos.
+Me encuentro en formaciÃ³n, con interÃ©s en aplicar estos aprendizajes en proyectos creativos y colaborativos.
     """)
 
 with tabs[2]:
-    st.image("https://i.imgur.com/XCE9PBR.jpg", caption="Exploraciones visuales", use_column_width=True)
     st.subheader("EXPLORACIONES CREATIVAS")
+    st.image("IMG-20250624-WA0019.jpg.jpg", caption="ExploraciÃ³n visual", use_column_width=True)
     st.markdown("""
-**Ejercicios fotográficos**  
-Exploración con luz natural, retratos y composición. Me interesa cómo la imagen puede sugerir atmósferas sutiles.
+**Ejercicios fotogrÃ¡ficos**  
+ExploraciÃ³n con luz natural, retratos y composiciÃ³n. Me interesa cÃ³mo la imagen puede sugerir atmÃ³sferas sutiles.
 
-**Análisis de escenas visuales**  
-Observación de planos, ritmo narrativo y silencios. Herramientas valiosas para comprender la estructura cinematográfica.
+**AnÃ¡lisis de escenas visuales**  
+ObservaciÃ³n de planos, ritmo narrativo y silencios. Herramientas valiosas para comprender la estructura cinematogrÃ¡fica.
 
-**Creación audiovisual en grupo**  
-He participado en la escritura y planificación de escenas. Valoro el trabajo colaborativo y la construcción narrativa colectiva.
+**CreaciÃ³n audiovisual en grupo**  
+He participado en la escritura y planificaciÃ³n de escenas. Valoro el trabajo colaborativo y la construcciÃ³n narrativa colectiva.
     """)
 
 with tabs[3]:
-    st.subheader("RESEARCH · Intereses en desarrollo")
+    st.subheader("RESEARCH Â· Intereses en desarrollo")
     st.markdown("""
 Actualmente me interesa explorar temas como:
 
-- Representación de lo cotidiano en el cine y las series  
+- RepresentaciÃ³n de lo cotidiano en el cine y las series  
 - Personajes femeninos en narrativas visuales  
-- Estética visual en redes sociales  
+- EstÃ©tica visual en redes sociales  
 - Impacto emocional de las historias audiovisuales  
-- Colores, texturas y silencios como generadores de atmósfera  
+- Colores, texturas y silencios como generadores de atmÃ³sfera  
 
-Estas áreas reflejan mi búsqueda personal y posibles caminos profesionales.
+Estas Ã¡reas reflejan mi bÃºsqueda personal y posibles caminos profesionales.
     """)
 
 with tabs[4]:
-    st.subheader("ACHIEVEMENTS · Participaciones formativas")
+    st.subheader("ACHIEVEMENTS Â· Participaciones formativas")
     st.markdown("""
-- Participación en el curso de Narrativa Audiovisual (PUCP)  
-- Aprobación de cursos clave en lenguaje visual, guion y fotografía  
+- ParticipaciÃ³n en el curso de Narrativa Audiovisual (PUCP)  
+- AprobaciÃ³n de cursos clave en lenguaje visual, guion y fotografÃ­a  
 
 Estas experiencias fortalecen mis herramientas expresivas como comunicadora audiovisual.
     """)
 
 with tabs[5]:
-    st.image("https://i.imgur.com/0X6n0xJ.jpg", caption="Maya · compañía e inspiración", use_column_width=True)
-    st.subheader("HOBBIES · Referencias personales")
+    st.subheader("HOBBIES Â· Referencias personales")
+    st.image("IMG_2856.JPG", caption="Maya Â· compaÃ±Ã­a e inspiraciÃ³n", use_column_width=True)
     st.markdown("""
-- Escuchar música (K-pop, Taylor Swift, playlists lo-fi)  
-- Ver series con cuidado estético, como k-dramas  
-- Disfrutar de una taza de té en momentos tranquilos  
-- Compartir tiempo con mi mascota, Maya, fuente de compañía e inspiración  
+- Escuchar mÃºsica (K-pop, Taylor Swift, playlists lo-fi)  
+- Ver series con cuidado estÃ©tico, como k-dramas  
+- Disfrutar de una taza de tÃ© en momentos tranquilos  
+- Compartir tiempo con mi mascota, Maya, fuente de compaÃ±Ã­a e inspiraciÃ³n  
 
 Estas referencias personales alimentan mi mirada creativa.
     """)
